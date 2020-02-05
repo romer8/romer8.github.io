@@ -106,12 +106,12 @@ function test (){
     selection_type(unit1_value,unit2_value,"Inches","Feet",INCHES_TO_FEET,distanciaFloat);
     selection_type(unit1_value,unit2_value,"Inches","Miles",INCHES_TO_MILES,distanciaFloat);
 
-    selection_type(unit1_value,unit2_value,"Feet","Meters",INCHES_TO_METER,distanciaFloat);
+    selection_type(unit1_value,unit2_value,"Feet","Meters",FEET_TO_METER,distanciaFloat);
     selection_type(unit1_value,unit2_value,"Feet","Kilometers",FEET_TO_KILO,distanciaFloat);
     selection_type(unit1_value,unit2_value,"Feet","Feet",FEET_TO_FEET,distanciaFloat);
     selection_type(unit1_value,unit2_value,"Feet","Yard",FEET_TO_YARD,distanciaFloat);
     selection_type(unit1_value,unit2_value,"Feet","Miles",FEET_TO_MILES,distanciaFloat);
-    selection_type(unit1_value,unit2_value,"Feet","Inches",FEET_TO_FEET,distanciaFloat);
+    selection_type(unit1_value,unit2_value,"Feet","Inches",FEET_TO_INCHES,distanciaFloat);
 
 
     // if(unit1_value ==="Kilometers" && unit2_value==="Kilometers"){
