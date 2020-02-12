@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="mannings.css">
+
+    <meta charset="utf-8">
+    <title>Manning's equation calculator</title>
+  </head>
+  <body>
+    <h1>MANNING'S EQUATION CALCULATOR</h1>
+    <div id="main">
+       <img src="img/mans2.jpeg" alt="Italian Trulli"><br>
+       <div class="container">
+         <ul>
+           <li>
+             <input type="radio" id="English_units" name="units" value="English Units">
+             <label for="English_units">English Units</label>
+             <div class="check"></div>
+
+           </li>
+           <li>
+             <input type="radio" id="SI_units" name="units" value="SI Units">
+             <label for="SI_units">SI units</label>
+             <div class="check"><div class="inside"></div></div>
+
+           </li>
+         </ul>
+       </div>
+       
+        <p> Area</p> <input id="Area" type="text" name="area">
+        <p> Wetted Perimeter</p><input id="wperimeter" type="text" name="perimeter">
+        <p> Channel Slope</p> <input id="ch_s" type="text" name="slope">
+        <p> Mannings-n</p><input id="manning_n" type="text" name="n">
+        <br>
+        <button class="btn btn-danger wow fadeInUp" data-wow-delay="0.4s" id= "convertMe" type="button">Convert</button>
+
+        <h3>Velocity-output</h3>
+        <h4 id="velocity-output"> ........ </h4>
+        <h3>Discharge-output</h3>
+        <h4 id="discharge-output"> ......... </h4>
+    </div>
+
+      <script type="text/javascript" src="mannings.js"></script>
+  </body>
+</html>
