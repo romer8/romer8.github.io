@@ -2,79 +2,48 @@
 //-16.517176, -68.127178
 //-16.496250, -68.137223
 var arrayMarkers=[];
+var datalayer;
 arrayMarkers=[
   {
-    position:{lat: -16.493164, lng: -68.135101},
+    position:[-16.493164,-68.135101],
     name:" My House",
-    info:'<div id="content">'+
-      '<div id="siteNotice">'+
+    info:'<div id="content1">'+
+      '<div id="siteNotice1">'+
       '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
-      '<div id="bodyContent">'+
-      '<img src="img/3.png">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<h1>High School</h1>'+
+      '<div id="bodyContent1">'+
+      '<img src="img/llama.jpg">'+
+      '<p><b>San Calixto</b>, also referred to as <b>Mi Colegio San Calixto</b>, ' +
+    'De acuerdo a los datos históricos los Jesuitas fueron llamados por Monseñor Calixto Clavijo para que realicen una obra educativa, para ello adquirió la residencia del Mariscal Andrés de Santa Cruz, (actualmente Monumento Nacional) la misma que donó a la Compañía de Jesús para que ahí funcionase el nuevo colegio. En el mes de "Julio de 1882" se fundó el Colegio dándole el nombre de San Calixto (Obispo Mártir) como una forma de reconocimiento a Mons. Calixto Clavijo. El 1ro. de Agosto de 1882 empezó a funcionar el colegio con algo mas de 40 alumnos. Alrededor del Colegio, con el transcurrir de los años, se crearon cuatro grandes obras, </p>'+
       '</div>'+
       '</div>'
   },
   {
-    position:{lat: -16.517176, lng: -68.127178},
-    name:" My School",
-    info:'<div id="content">'+
-      '<div id="siteNotice">'+
+    position:[-16.517176, -68.127178],
+    name:" La Paz",
+    info:'<div id="content2">'+
+      '<div id="siteNotice2">'+
       '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
-      '<div id="bodyContent">'+
-      '<img src="img/3.png">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<h1>La Paz-Bolivia</h1>'+
+      '<div id="bodyContent2">'+
+      '<img src="img/home.jpg">'+
+      '<p><b>La Paz-Bolivia</b>, also referred to as <b>The wonder city</b>, is the main ' +
+      'La Paz, which lies between 10,650 and 13,250 feet (3,250 and 4,100 metres) above sea level, is the world’s highest national capital. Visitors, upon arrival, often find exertion difficult because of the rarefied atmosphere at those elevations. The centre of the city lies in a deep, broad canyon formed by the La Paz, or Choqueyapu, River. The city’s location, about 1,400 feet (430 metres) below the surface of the Altiplano, the high intermontane plateau, affords some protection from the cold winds of the highlands. Population growth since the latter part of the 20th century has expanded the city up the canyon walls to the edge of the Altiplano. La Paz was Bolivia’s most populous city until the turn of the 21st century, when it was overtaken by Santa Cruz.  </p>'+
       '</div>'+
       '</div>'
   },
   {
-    position:{lat: -16.496250, lng: -68.137223},
+    position:[-16.496250,-68.137223],
     name:" My Church",
-    info:'<div id="content">'+
-      '<div id="siteNotice">'+
+    info:'<div id="content3">'+
+      '<div id="siteNotice3">'+
       '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
-      '<div id="bodyContent">'+
-      '<img src="img/3.png">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
+      '<h1>San Francisco</h1>'+
+      '<div id="bodyContent3">'+
+      '<img src="img/market.jpg">'+
+      '<p><b>San Francisco</b>, is a catholic chruch built <b> in the colonia</b>,' +
+       'La Basílica de San Francisco de la ciudad de La Paz, Bolivia, es un templo católico bajo la advocación de San Francisco de Asís. Está situado en el centro de la ciudad. Forma parte del conjunto conventual que da el nombre a la plaza adyacente Plaza Mayor de San Francisco</p>'+
+      '<p>Attribution: Uluru, <a href="https://es.wikipedia.org/wiki/Bas%C3%ADlica_de_San_Francisco_(La_Paz)">'+
       '</div>'+
       '</div>'
   }
@@ -83,25 +52,37 @@ arrayMarkers=[
 
 var map;
 function initMap() {
+  var map = L.map('map').setView([-16.516877, -68.127461], 14);
 
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -16.511694, lng: -68.128318},
-    zoom: 15
-  });
+  L.esri.basemapLayer('Topographic').addTo(map);
+  var circle = L.circle([-16.516877, -68.127461], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 2000
+    }).addTo(map);
+  //
   arrayMarkers.forEach(function(markerPosition){
-    var infowindow = new google.maps.InfoWindow({
-      content: markerPosition.info
-    });
+    console.log(markerPosition.position);
+    var marker = L.marker(markerPosition.position).addTo(map);
+    marker.bindPopup(markerPosition.info);
+  });
+    // load GeoJSON from an external file
 
-    var marker = new google.maps.Marker({
-      position: markerPosition.position,
-      map: map,
-      title:markerPosition.name
+  // $.getJSON("cines.json",function(data){
+  //   // add GeoJSON layer to the map once the file is loaded
+  //   L.geoJson(data).addTo(map);
+  // });
+  document.getElementById("activateMe").addEventListener("click",function(data){
+    $.getJSON("verdes.json",function(data){
+      // add GeoJSON layer to the map once the file is loaded
+      datalayer=L.geoJson(data);
+      datalayer.addTo(map);
     });
-    marker.addListener('click', function() {
-       infowindow.open(map, marker);
-    });
-
   })
-
+  document.getElementById("deactivateMe").addEventListener("click",function(data){
+      map.removeLayer(datalayer);
+  })
 }
+
+initMap();
