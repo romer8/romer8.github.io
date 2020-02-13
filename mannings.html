@@ -26,6 +26,30 @@
     <h1>MANNING'S EQUATION CALCULATOR</h1>
     <div id="main">
        <img src="img/mans2.jpeg" alt="Italian Trulli"><br>
+
+       <div id="accordion">
+
+         <div class="card">
+           <div class="card-header" id="headingTwo">
+             <h5 class="mb-0">
+               <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                 Click for explanation of variables
+               </button>
+             </h5>
+           </div>
+           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+             <div class="card-body">
+               <p class="explans"> Width: This is the width of the rectangular channel </p>
+               <p class="explans">Depth: This is the depth of the rectangular channel</p>
+               <p class="explans">R:Hydraulic radius which is a function of the wetted perimeter and teh area</p>
+               <p class="explans">S: Slope of the channel</p>
+               <p class="explans">A: Area of the channel</p>
+               <p class="explans">n: mannings n coefficient</p>
+
+             </div>
+           </div>
+         </div>
+       </div>
        <div class="container">
          <ul>
            <li>
@@ -41,12 +65,25 @@
 
            </li>
          </ul>
+
        </div>
-       
-        <p> Area</p> <input id="Area" type="text" name="area">
-        <p> Wetted Perimeter</p><input id="wperimeter" type="text" name="perimeter">
-        <p> Channel Slope</p> <input id="ch_s" type="text" name="slope">
-        <p> Mannings-n</p><input id="manning_n" type="text" name="n">
+       <p id="resultado_units" class="resultados" style="display:none"> </p>
+
+
+        <!-- <p> Area</p> <input id="Area" type="text" name="area"> -->
+        <p> Width</p> <input id="width" type="text" name="width"><br>
+        <p id = "resultado_width" class="resultados" style="display:none"></p>
+        <p> Depth</p> <input id="depth" type="text" name="depth"><br>
+        <p id= "resultado_depth" class="resultados" style="display:none"></p>
+
+        <!-- <p> Wetted Perimeter</p><input id="wperimeter" type="text" name="perimeter"> -->
+
+        <p> Channel Slope</p> <input id="ch_s" type="text" name="slope"><br>
+        <p id="resultado_slope" class="resultados" style="display:none"></p>
+
+        <p> Mannings-n</p><input id="manning_n" type="text" name="n"><br>
+        <p id="resultado_n" class="resultados" style="display:none"></p>
+
         <br>
         <button class="btn btn-danger wow fadeInUp" data-wow-delay="0.4s" id= "convertMe" type="button">Convert</button>
 

@@ -7,6 +7,7 @@ body{
   text-align: center;
 }
 
+
 #convertMe {
   background: #ffa400;
   border-color: transparent;
@@ -66,12 +67,35 @@ p {
   background-color: black;
 }
 
+#accordion p{
+  color: white;
+  font-size: 150%;
+  width: 90%;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 30%;
+  background-color: black;
+}
+.resultados p {
+  font-size: 150%;
+  width: 50%;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-align: right;
+  background-color: red;
+}
+
 .container{
   display: block;
   position: relative;
   height: auto;
   width:20%;
-  padding: 20px;
+  padding-bottom: 20px;
   font-size: 120%;
   font-weight: bold;
 }
