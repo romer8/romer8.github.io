@@ -83,6 +83,7 @@ function initMap() {
   document.getElementById("deactivateMe").addEventListener("click",function(data){
       map.removeLayer(datalayer);
   })
+
 }
 
 initMap();
