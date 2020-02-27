@@ -47,14 +47,25 @@ function initMap() {
         format:'image/png',
         opacity: 0.3
   });
+  var layer5 = L.WMS.tileLayer("https://geoserver.hydroshare.org/geoserver/HS-095c0b00b7f14cd29ee3b0bf6062c8c3/wms", {
+        layers: 'geo_export_74f32b04-4074-4173-a9d4-5c5e6b0370dc',
+        transparent: true,
+        format:'image/png',
+        opacity: 1
+  });
+  var layer6 = L.WMS.tileLayer("https://geoserver.hydroshare.org/geoserver/HS-095c0b00b7f14cd29ee3b0bf6062c8c3/wms", {
+        layers: 'nyu_2451_34493',
+        transparent: true,
+        format:'image/png',
+        opacity: 1
+  });
 
   layer3.addTo(map);
+  layer6.addTo(map);
   layer4.addTo(map);
+  // layer5.addTo(map);
   console.log(layer3);
-  layer4.addEventListener("click",function(data){
-    data.showFeatureInfo();
-    console.log(data);
-  })
+
 
   // layer1.bindPopup("hola");
   // layer2.bindPopup("hola3");
